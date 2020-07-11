@@ -1,0 +1,10 @@
+.Forecast {
+    display: inline-block;
+    background-color: #ccc;
+    padding: 15px;
+    margin: 10px;
+}
+
+.Forecast:hover{
+    background-color: #ddd;
+}

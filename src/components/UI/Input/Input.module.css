@@ -1,0 +1,16 @@
+.Input {
+    text-align: center;
+    padding: 15px;
+    background-color: #101b44;
+}
+
+.Input h1 {
+    color: #e2ad17;
+    text-shadow: 2px 2px black;
+}
+
+.Input input {
+    display: inline-block;
+    margin: 5px;
+    font-size: larger;
+}

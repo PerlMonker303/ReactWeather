@@ -1,0 +1,26 @@
+.ButtonContaier{
+    text-align: center;
+    display: block;
+}
+
+.Button {
+    background-color: transparent;
+    color: #e2ad17;
+    text-shadow: 2px 2px black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px 30px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.Button:hover{
+    color: white;
+    background-color: #e2ad17;
+}
