@@ -6,7 +6,7 @@ import axios from 'axios';
 
 function App() {
   /*
-  const test = axios.get('http://api.weatherstack.com/forecast?access_key=e8ec4f1ea621d83f676f81576bd4e748&query=Sfantu Gheorghe,Covasna,Romania')
+  const test = axios.get('http://api.weatherstack.com/forecast?access_key=e8ec4f1ea621d83f676f81576bd4e748&query=Romania')
   .then(response => {
     console.log(response);
   });
