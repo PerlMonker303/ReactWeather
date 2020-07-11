@@ -10,5 +10,5 @@
   <li>mobile friendly</li>
 </ul>
 
-<span>Cities db taken from: https://github.com/dr5hn/countries-states-cities-database</span>
-<span>Weather API used: https://weatherstack.com/</span>
+<p>Cities db taken from: https://github.com/dr5hn/countries-states-cities-database</p>
+<p>Weather API used: https://weatherstack.com/</p>
