@@ -9,13 +9,17 @@ const input = (props) => {
                 className={styles.Input}
                 placeholder={props.placeholder}
                 onChange={(event) => props.changed(event, props.placeholder)}
+                list={"suggestions_"+props.placeholder}
+                value={props.value}
             />
-            <datalist id="suggestions">
-                <option value="Black" />
-                <option value="Red" />
-                <option value="Green" />
-                <option value="Blue" />
-                <option value="White" />
+            <datalist id={"suggestions_"+props.placeholder}>
+                {
+                    props.suggestions.map(sugg => {
+                        return (
+                            <option key={sugg} value={sugg} />
+                        )
+                    })
+                }
             </datalist>
         </div>
     )

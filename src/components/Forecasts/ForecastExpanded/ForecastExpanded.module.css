@@ -1,0 +1,26 @@
+.ForecastExpanded {
+    background-color: #1f3647;
+    color: white;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    padding: 8px;
+    margin-top: 20px;
+}
+
+.ForecastExpanded h2 {
+    text-shadow: 1px 1px black;
+}
+
+.ForecastExpanded ul {
+    list-style-type: none;
+}
+
+.Pane {
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 1px;
+    display: inline-block;
+    width: 49%;
+    box-shadow: 1px 1px black;
+}
