@@ -5,6 +5,9 @@ import ForecastExpanded from './components/Forecasts/ForecastExpanded/ForecastEx
 import Spinner from './components/UI/Spinner/Spinner';
 
 import axios from 'axios';
+//import { ComposableMap, Geographies, Geography } from "react-simple-maps";
+
+//const GEO_URL = "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
 
 class App extends Component {
   state = {
@@ -33,3 +36,11 @@ class App extends Component {
 }
 
 export default App;
+
+/*
+<ComposableMap>
+  <Geographies geography={GEO_URL}>
+    {(geographies) => geographies.map(geo => <Geography key={geo.rsmKey} geography={geo} />)
+    }
+  </Geographies>
+</ComposableMap> */
