@@ -4,7 +4,7 @@ import Input from './Input/Input';
 import Button from '../Button/Button';
 import styles from './Inputs.module.css';
 
-import data from '../../../api/citiesDB.json';
+import data from '../../../data/citiesDB.json';
 
 const MAX_ENTRIES = 5;
 

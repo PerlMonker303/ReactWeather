@@ -3,6 +3,8 @@ import Forecasts from './components/Forecasts/Forecasts';
 import Inputs from './components/UI/Inputs/Inputs';
 import ForecastExpanded from './components/Forecasts/ForecastExpanded/ForecastExpanded';
 import Spinner from './components/UI/Spinner/Spinner';
+import MapChart from './components/UI/MapChart/MapChart';
+import Footer from './components/UI/Footer/Footer';
 
 import axios from 'axios';
 //import { ComposableMap, Geographies, Geography } from "react-simple-maps";
@@ -30,6 +32,7 @@ class App extends Component {
         {/*<Forecasts title="TITLE" />*/}
         {this.state.loading ? <Spinner /> : null}
         {this.state.expanded ? <ForecastExpanded data={this.state.data}/> : null}
+        {this.state.expanded ? <MapChart data={this.state.data}/> : null}
       </div>
     );
   }
@@ -38,6 +41,8 @@ class App extends Component {
 export default App;
 
 /*
+<Footer />
+
 <ComposableMap>
   <Geographies geography={GEO_URL}>
     {(geographies) => geographies.map(geo => <Geography key={geo.rsmKey} geography={geo} />)
