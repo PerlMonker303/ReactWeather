@@ -3,8 +3,18 @@
     background-color: #ccc;
     padding: 15px;
     margin: 10px;
+    user-select: none;
+    cursor: pointer;
+    transition: background-color 0.1s, color 0.1s;
 }
 
 .Forecast:hover{
-    background-color: #ddd;
+    color: white;
+    background-color: #e2ad17;
+}
+
+.Active {
+    background-color: #101b44;
+    color: white;
+    font-weight: bold;
 }

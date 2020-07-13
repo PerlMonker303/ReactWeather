@@ -1,0 +1,18 @@
+.MapContainer {
+    background-color: #101b44;
+    padding-top: 10px;
+    display: block;
+}
+
+.Span {
+    color: #e2ad17;
+    text-shadow: 1px 0.7px black;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.Map {
+    background-color: white;
+    display: block;
+}

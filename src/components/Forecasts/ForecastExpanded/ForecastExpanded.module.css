@@ -3,17 +3,17 @@
     margin: auto;
     width: 80%;
     text-align: center;
-    height: 70vh;
     vertical-align: middle;
-    padding-top: 10%;
+    padding: 40px;
 }
 
 .ForecastExpanded h2 {
     text-shadow: 2px 2px #eee;
 }
 
-.ForecastExpanded ul {
-    list-style-type: none;
+.ForecastExpanded img {
+    display: block;
+    margin: 5px auto;
 }
 
 .Pane {

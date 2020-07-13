@@ -1,8 +1,42 @@
 .Footer {
     background-color: #101b44;
     color: white;
-    position: absolute;
-    bottom: 0px;
+    display: block;
+    position: relative;
+    margin-top: 99vh;
     width: 100%;
-    
+}
+
+.FooterSticked {
+    background-color: #101b44;
+    color: white;
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+}
+
+.Paragraph {
+    margin: auto;
+}
+
+.Button {
+    background-color: transparent;
+    color: #e2ad17;
+    text-shadow: 2px 2px black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 1px 8px 2px 8px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.Button:hover{
+    color: white;
+    background-color: #e2ad17;
 }

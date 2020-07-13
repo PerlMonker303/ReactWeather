@@ -1,0 +1,8 @@
+.Error {
+    text-align: center;
+    font-style: italic;
+    background-color: rgb(240, 48, 48);
+    color: white;
+    padding: 2px;
+    font-size: 18px;
+}

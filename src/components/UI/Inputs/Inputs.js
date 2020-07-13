@@ -26,11 +26,13 @@ class Inputs extends Component {
         Pre: ctr_name - country name; reg_name - region name
         Post: current and selected country are updated
         */
-        this.setState(prevState => ({
-            ...prevState.state,
-            selected_country: ctr_name,
-            current_country: ctr_name
-        }));
+        if(this.state.selected_country === ''){
+            this.setState(prevState => ({
+                ...prevState.state,
+                selected_country: ctr_name,
+                current_country: ctr_name
+            }));
+        }
     }
 
     setRegionBasedOnCity = (reg_name, city_name) => {
@@ -38,11 +40,13 @@ class Inputs extends Component {
         Pre: reg_name - region name ; city_name - city name
         Post: current and selected region are updated
         */
-        this.setState(prevState => ({
-            ...prevState.state,
-            selected_region: reg_name,
-            current_region: reg_name
-        }));
+        if(this.state.selected_region === ''){
+            this.setState(prevState => ({
+                ...prevState.state,
+                selected_region: reg_name,
+                current_region: reg_name
+            }));
+        }
     }
 
     changedInputHandler = (event, type) => {
@@ -78,8 +82,8 @@ class Inputs extends Component {
                            sugg_countries: [...prevState.sugg_countries, country.name]
                         }));
                         entries++;
-                        return country;
                     }
+                    return country;
                 });
                 break;
             case ("State/Region/County"):
@@ -111,13 +115,14 @@ class Inputs extends Component {
                                     sugg_regions: [...prevState.sugg_regions, region.name]
                                 }));
                                 entries++;
-                                return region;
                             }
+                            return region;
                         });
                         if(country.name === this.state.country){
-                            return;
+                            return country;
                         }
                     }
+                    return country;
                 })
                 break;
             case ("City"):
@@ -147,6 +152,7 @@ class Inputs extends Component {
                                         if(this.state.selected_region === ''){ //auto set the region
                                             this.setRegionBasedOnCity(region.name, city.name);
                                         }
+                                        return city;
                                     }
                                     else if(city.name.slice(0,text.length).toUpperCase() === text.toUpperCase() && text && entries < MAX_ENTRIES){
                                         this.setState(prevState => ({
@@ -154,12 +160,14 @@ class Inputs extends Component {
                                             sugg_cities: [...prevState.sugg_cities, city.name]
                                         }));
                                         entries++;
-                                        return city;
                                     }
+                                    return city;
                                 });
                             }
+                            return region;
                         });
                     }
+                    return country;
                 });
                 break;
             default:
@@ -170,7 +178,6 @@ class Inputs extends Component {
     buttonClickedHandle = (event) => {
         const region = this.state.selected_region.split(" ")[0];
         const query = this.state.selected_city + "," + region + "," + this.state.selected_country;
-        console.log(query);
         this.props.update(query);
     }
 
